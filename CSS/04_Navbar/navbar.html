@@ -28,6 +28,7 @@
         justify-content: space-evenly;
         margin: 0;
         padding: 0;
+        align-items: center;
       }
       .nav1 li {
         display: inline;
@@ -62,6 +63,82 @@
         border-radius: 5px;
         cursor: pointer;
       }
+
+      /* Targetting the nav2 */
+
+      .nav2 {
+        background-color: rgb(9, 80, 24);
+        width: 200px;
+        padding: 20px;
+      }
+      .nav2 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav2 li {
+        margin-bottom: 12px;
+      }
+      .nav2 a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px;
+        width: 100%;
+      }
+      .nav2 a:hover {
+        background-color: #08d757;
+      }
+      .nav2 .login-btn {
+        background-color: #0b8f33;
+        border: 0;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .nav2 .login-btn:hover {
+        background-color: #fff;
+      }
+      /* Targetting the nav3 */
+      .nav3 {
+        background-color: #030e15;
+        padding: 10px;
+      }
+      .nav3 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav3 a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: block;
+      }
+      .nav3 .dropdown-content {
+        display: none;
+      }
+      .nav3 .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: #2c2929;
+        min-width: 100px;
+        border-radius: 7px;
+        padding: 5px 15px;
+      }
+      .nav3 .login-btn {
+        background-color: #0920a1;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+      }
+      .nav3 .login-btn:hover {
+        background-color: #24224a;
+      }
     </style>
   </head>
   <body>
@@ -71,6 +148,41 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Twitter style navbar in CSS -->
+
+    <div class="nav-container">
+      <h2>Variation 2: Vertical with hover effect</h2>
+      <nav class="nav2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Dropdown navbars and positions -->
+
+    <div class="nav-container">
+      <h2>Variation 3: Horizontal with dropdown effect</h2>
+      <nav class="nav3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+            </div>
+          </li>
           <li><a href="#">Products</a></li>
           <li><button class="login-btn">Login</button></li>
         </ul>
