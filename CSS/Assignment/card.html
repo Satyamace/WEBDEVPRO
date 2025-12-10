@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right, #eaeaea, #ffffff);
+      }
+      .main {
+        background-image: linear-gradient(to bottom, #f0f8ff, #ffffff);
+        margin-bottom: 20px;
+        border: 1px black;
+        border-radius: 5px;
+        padding: 50px;
+      }
+      .grid-cont {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .box {
+        display: grid;
+        border: 1px solid black;
+        border-radius: 5px;
+        justify-items: center;
+        overflow: hidden;
+      }
+      @media (max-width: 696px) {
+        .grid-cont {
+          grid-template-columns: 1fr; /* stack cards */
+          gap: 20px;
+        }
+      }
+
+      img {
+        height: 100px;
+        object-fit: cover;
+        display: block;
+      }
+      .card-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .btn {
+        margin: 10px;
+        padding: 5px;
+      }
+      .buy-btn {
+        background-color: #afe1d9;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: background-color 0.9s ease-in-out;
+      }
+
+      .buy-btn:hover {
+        background: linear-gradient(to right, #81ff8a, #64965e);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="grid-cont">
+        <div
+          class="box"
+          style="
+            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+          "
+        >
+          <img src="../Images/Car1.avif" />
+          <div class="card-content">
+            <div class="price">
+              <h3>Starting at</h3>
+              <p>
+                789900 <br />
+                *Ex Showroom Price
+              </p>
+            </div>
+            <div class="engine">
+              <h3>Engine</h3>
+              <p>
+                1.2|kappa petrol <br />
+                1.4|kappaa petrol
+              </p>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="buy-btn">
+              <a
+                href="https://www.hyundai.com/in/en/find-a-car/venue/highlights"
+                >Buy Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="box"
+          style="
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+          "
+        >
+          <img src="../Images/Car2.avif" />
+          <div class="card-content">
+            <div class="price">
+              <h3>Starting at</h3>
+              <p>
+                105540 <br />
+                *Ex Showroom Price
+              </p>
+            </div>
+            <div class="engine">
+              <h3>Engine</h3>
+              <p>kappa 1.0|Turbo Gdi petrol <br /></p>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="buy-btn">
+              <a
+                href="https://www.hyundai.com/in/en/find-a-car/venue-n-line/highlights"
+                >Buy Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="box"
+          style="
+            background-image: linear-gradient(
+              to right,
+              #43e97b 0%,
+              #38f9d7 100%
+            );
+          "
+        >
+          <img src="../Images/Car3.avif" />
+          <div class="card-content">
+            <div class="price">
+              <h3>Starting at</h3>
+              <p>
+                568033 <br />
+                *Ex Showroom Price
+              </p>
+            </div>
+            <div class="engine">
+              <h3>Engine</h3>
+              <p>1.2|kappa petrol <br /></p>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="buy-btn">
+              <a
+                href="https://www.hyundai.com/in/en/find-a-car/exter/highlights"
+                >Buy Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="box"
+          style="
+            background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+          "
+        >
+          <img src="../Images/Car4.avif" />
+          <div class="card-content">
+            <div class="price">
+              <h3>Starting at</h3>
+              <p>
+                1072589<br />
+                *Ex Showroom Price
+              </p>
+            </div>
+            <div class="engine">
+              <h3>Engine</h3>
+              <p>
+                1.5|Turbo gdi petrol <br />
+                1.5|MPi petrol
+              </p>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="buy-btn">
+              <a
+                href="https://www.hyundai.com/in/en/find-a-car/creta/highlights"
+                >Buy Now</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
