@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Add the global fix here */
+/* @layer base {
+  input {
+    @apply border border-gray-300 rounded-md p-1 w-full mb-2 outline-none;
+  }
+} */

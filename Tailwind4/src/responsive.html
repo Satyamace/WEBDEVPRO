@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-600 text-white min-h-screen flex justify-center items-center">
+  
+  <!-- Wrapper keeps both centered -->
+  <div class="flex flex-col items-center gap-6 w-full">
+
+    <!-- H1 (unchanged behavior) -->
+    <h1 class="text-sm sm:text-3xl hover:text-lime-200 duration-300 hover:-translate-y-1 hover:scale-110">
+      Learn about Responsive design
+    </h1>
+
+    <!-- Grid (unchanged behavior) -->
+    <div class="grid sm:grid-cols-12 m-4 gap-4 w-full px-8">
+      <div class="min-h-[100px] rounded-lg bg-orange-500 shadow-lg
+      sm:col-span-2 sm:block hidden"></div>
+
+      <div class="min-h-[100px] rounded-lg bg-teal-500 shadow-lg
+      sm:col-span-8"></div>
+
+      <div class="min-h-[100px] rounded-lg bg-purple-500 shadow-lg
+      sm:col-span-2 sm:block hidden"></div>
+    </div>
+
+  </div>
+</body>
+</html>
