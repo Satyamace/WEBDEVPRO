@@ -92,6 +92,4 @@ console.log(worldCities);
    */
 let cityBucketList = ["Kyoto", "London", "CapeTown", "Vancouver"]
 let isLondonInList = cityBucketList.includes("London")
-console.log(isLondonInList);
-
-   
+console.log(isLondonInList);   
