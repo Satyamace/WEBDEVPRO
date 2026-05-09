@@ -28,16 +28,16 @@ while (j > 0) {
 */
 
 let teacollection = [];
-let tea = "abc";
+let tea;
 
-// do {
-//   tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
+do {
+  tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
 
-//   if (tea != "stop") {
-//     teacollection.push(tea);
-//   }
-// } while (tea != "stop");
- //done in console of web browser prompt not supported here in Vs code.
+  if (tea != "stop") {
+    teacollection.push(tea);
+  }
+} while (tea != "stop");
+//done in console of web browser prompt not supported here in Vs code.
 
 /*
 4. Write a do while loop that adds number from 1 to 3 and stores the result in a variable named total.
@@ -50,33 +50,31 @@ do {
   total = total + k;
   k++;
 } while (k <= 3);
-console.log(total); 
+console.log(total);
 
 /*
 5. Write a for loop that multiplies each element in the array [2,4,6] by 2 and stores the results in a new array named multipliedNumbers.
 */
 
-let multipliedNumbers = []
-let numbers = [2, 4, 6]
-for (let l = 0; l < numbers.length; l++ ) {
+let multipliedNumbers = [];
+let numbers = [2, 4, 6];
+for (let l = 0; l < numbers.length; l++) {
   // takenumbers = numbers[l] * 2
   // multipliedNumbers.push(takenumbers)
 
-  multipliedNumbers.push(numbers[l] * 2)
+  multipliedNumbers.push(numbers[l] * 2);
 }
 console.log(multipliedNumbers);
 
 /*
 6. Write a for loop that lists all the cities in the array [paris, new york, tokyo, london] and stores each city in a new array named citylist.
 */
- 
-let cityList = []
-let cities = ["Paris", "New York", "London"]
+
+let cityList = [];
+let cities = ["Paris", "New York", "London"];
 
 for (let m = 0; m < cities.length; m++) {
   const myCities = cities[m];
-  cityList.push(myCities)
-  
+  cityList.push(myCities);
 }
 console.log(cityList);
-
