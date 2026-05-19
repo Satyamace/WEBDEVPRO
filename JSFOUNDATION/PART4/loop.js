@@ -187,3 +187,4 @@ for (const newDrink of drink) {
   shortTeas.push(newDrink)
 }
 console.log(shortTeas);
+//new

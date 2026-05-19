@@ -78,3 +78,4 @@ for (let m = 0; m < cities.length; m++) {
   cityList.push(myCities);
 }
 console.log(cityList);
+//new
