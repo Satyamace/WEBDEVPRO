@@ -137,6 +137,8 @@ teatypes.forEach(function (tea) {
 });
 console.log(availableTeas);
 
+
+
 /*
 8. Write a forEach loop that iterates through the array ["Berlin", "Tokyo", "Sydney", "Paris"].
    Skip "Sydney" and store the other cities in a new array named 'traveledCities'.
