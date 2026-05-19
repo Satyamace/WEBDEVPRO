@@ -34,3 +34,4 @@ console.log(Number(null));
 
 
 
+//part2
