@@ -44,6 +44,8 @@ let myNewarray = [1, 2, 3, 4, 5];
 prototyple chain effectively uses the memory and each object gets the same function 
 */
 
+// Inheritance
+
 class vehicle {
   constructor(make, model) {
     //class has special method constructor,used when we need new keyword.
