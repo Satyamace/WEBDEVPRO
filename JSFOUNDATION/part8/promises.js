@@ -3,7 +3,7 @@
 function fetchdata() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      let success = false;
+      let success = true;
       if (success) {
         resolve("Data fetched successfully");
 
@@ -23,7 +23,7 @@ function fetchdata() {
 fetchdata()
   .then((data) => {
     console.log(data);
-    return `Satyam`;
+    return data.toLowerCase();
   }) // then and catch have a callback,data catches anything sent via resolve.
   .then((value) => {
     console.log(value);

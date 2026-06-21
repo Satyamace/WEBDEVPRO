@@ -83,24 +83,25 @@ document
     let output = document.getElementById("feedbackDisplay");
     output.textContent = `Feedback is: ${feedback}`;
     output.style.fontWeight = "bold";
-    output.style.backgroundColor = "lightblue"
-    output.style.color = "black"
+    output.style.backgroundColor = "lightblue";
+    output.style.color = "black";
 
-    let label = document.querySelector('label[for="feedbackInput')
-    label.style.color = 'red'
-    label.style.fontWeight = 'bold'
+    let label = document.querySelector('label[for="feedbackInput');
+    label.style.color = "red";
+    label.style.fontWeight = "bold";
   });
 
+//example 9
 
-  //example 9
-
-document.addEventListener('DOMContentLoaded', function(){
-  document.getElementById('domStatus').textContent = "DOM fully loaded"
-})
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("domStatus").textContent = "DOM fully loaded";
+});
 
 //example 10
 
-document.getElementById("toggleHighlight").addEventListener('click', function(){
-  let descriptionText = document.getElementById("descriptionText");
-  descriptionText.classList.toggle('highlight')
-})
+document
+  .getElementById("toggleHighlight")
+  .addEventListener("click", function () {
+    let descriptionText = document.getElementById("descriptionText");
+    descriptionText.classList.toggle("highlight");
+  });
